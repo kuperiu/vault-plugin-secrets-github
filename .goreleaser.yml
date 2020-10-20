@@ -8,6 +8,7 @@ before:
     - go generate ./...
 builds:
 - main: ./cmd/main.go
+  id: main
 - env:
   - CGO_ENABLED=0
 archives:
