@@ -36,3 +36,7 @@ The GitHub backend is a secret engine for GitHub apps private keys that genrates
     Token                  v1.19e3d9de4f21a2349e72a54f45149625f48e8848
     ```
     
+
+## Remarks
+1. To authenticate with the token you have to use **token** instaed of **Bearer** in the Authorization header. Please see [here](https://docs.github.com/en/free-pro-team@latest/developers/apps/authenticating-with-github-apps#authenticating-as-an-installation) 
+2. You can find the token available endpoints [here](https://docs.github.com/en/free-pro-team@latest/rest/overview/endpoints-available-for-github-apps)
