@@ -1,4 +1,4 @@
-# Vault Mock Secrets Plugin
+# Vault GitHub Secrets Plugin
 
 The GitHub backend is a secret engine for GitHub apps private keys that genrates ephemeral installation tokens.
 
@@ -13,7 +13,7 @@ The GitHub backend is a secret engine for GitHub apps private keys that genrates
 2. Enable the secret engine with: ```vault secrets enable github```
 3. Create a GitHub app:
     - Create a private key and download it
-    - Create an installations for the app
+    - Create an installation for the app
 4. Configure the backend:
     - Create a json file with the following scheme with the private key, app id and installation id
       ```json
