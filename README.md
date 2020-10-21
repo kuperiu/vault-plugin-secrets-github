@@ -3,6 +3,7 @@
 The GitHUB backend is a secret engine for GitHub apps private keys that genrates installation tokens.
 
 ## Usage
+1. Setup Vault:
 
 All commands can be run using the provided [Makefile](./Makefile). However, it may be instructive to look at the commands to gain a greater understanding of how Vault registers plugins. Using the Makefile will result in running the Vault server in `dev` mode. Do not run Vault in `dev` mode in production. The `dev` server allows you to configure the plugin directory as a flag, and automatically registers plugin binaries in that directory. In production, plugin binaries must be manually registered.
 

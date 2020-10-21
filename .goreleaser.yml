@@ -7,14 +7,17 @@ before:
     # you may remove this if you don't need go generate
     - go generate ./...
 builds:
-- main: ./cmd/github/main.go
-  id: main
-- env:
-  - CGO_ENABLED=0
+  - env:
+      - CGO_ENABLED=0
+    goos:
+      - linux
+      - darwin
+    main: ./cmd/github/main.go
+    id: main
 archives:
-- replacements:
-    darwin: Darwin
-    linux: Linux
+  - replacements:
+      darwin: Darwin
+      linux: Linux
 checksum:
   name_template: 'checksums.txt'
 snapshot:
@@ -23,5 +26,6 @@ changelog:
   sort: asc
   filters:
     exclude:
-    - '^docs:'
-    - '^test:'
+      - '^docs:'
+      - '^test:'
+
