@@ -24,7 +24,7 @@ The GitHub backend is a secret engine for GitHub apps private keys that genrates
         }
       ```
       - Post the json file with:
-        ```curl -H "Content-Type: application/json" -H "X-Vault-Token: root" -X POST  http://${VAULT_ADDR}/v1/mock/org -d @payload.json -v```
+        ```curl -H "Content-Type: application/json" -H "X-Vault-Token: root" -X POST  http://${VAULT_ADDR}/v1/github/org -d @payload.json -v```
 5. Get the installation token with: ```vault read github/org```
 6. You should see the token in the following output:
     ```
