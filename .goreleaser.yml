@@ -14,6 +14,7 @@ builds:
       - darwin
     main: ./cmd/github/main.go
     id: main
+    binary: github
 archives:
   - replacements:
       darwin: Darwin
